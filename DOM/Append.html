@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Append</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".container").append("<li><img src='img/fullstar.png' /></li>")     //在指定元素里面后加入一个元素
+                    .prepend("<li><img src='img/fullstar.png' alt='我是前一个哦-_-' </li>");    //在指定元素里面前加入一个元素
+        });
+    </script>
+</head>
+<body>
+<ul class="container">
+    <li><img src="img/fullstar.png" alt=""></li>
+    <li><img src="img/fullstar.png" alt=""></li>
+</ul>
+</body>
+</html>

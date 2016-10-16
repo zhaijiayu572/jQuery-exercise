@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>after and before</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $("li img").after($("li img").attr("src"));       //在指定元素后面追加指定内容
+            $("li:first img").before($("li img").attr("src"));   //在指定元素之前加入元素
+        });
+    </script>
+</head>
+<body>
+<ul class="container">
+    <li><img src="img/fullstar.png" alt=""></li>
+    <li><img src="img/fullstar.png" alt=""></li>
+</ul>
+</body>
+</html>

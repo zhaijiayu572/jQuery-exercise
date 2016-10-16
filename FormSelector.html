@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormSelcetor</title>
+    <script src="jQuery/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#test>:disabled").val("不可用");
+        });
+    </script>
+</head>
+<body>
+<form id="test" action="" method="post">
+    <input name="" type="text" disabled="disabled" value=""><br/>
+    <input type="text" disabled="disabled" value="文本域"><br/>
+    <input type="text" value="文本域"><br/>
+    <input type="checkbox" checked="checked" value="复选框">
+    <input type="radio" value="单选按钮"><br/>
+    <select name="" id="">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3" selected="selected"></option>
+    </select>
+</form>
+</body>
+</html>

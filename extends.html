@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jQuery/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery.fn.extend({
+            check :function () {
+                return this.each(function () {
+                    this.checked=true;
+                });
+            },
+            ucheck :function () {
+                return this.each(function () {
+                    this.checked=false;
+                });
+            }
+        });
+        $(function () {
+            $("input[type=radio]").check().css("border","solid 1px red");
+            $("input[type=checkbox]").ucheck().css("border","solid 1px blue");
+        });
+    </script>
+</head>
+<body>
+    <input type="radio">
+    <input type="radio">
+    <input type="checkbox">
+    <input type="checkbox">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector:not</title>
+    <script type="text/javascript" src="jQuery/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+//            $(tr).css("background-color","blue");
+            $("tr:even").css("background","#F1F5FB");
+            $("tr:odd").css("background","#ff9");
+            $("tr:first").css({"background":"blue","color":"white"});
+            $("tr:not(tr:lt(3))").css({"background":"white","color":"black"});
+        });
+
+    </script>
+</head>
+<body>
+<table>
+    <tr><th>选择器</th><th>说明</th></tr>
+    <tr><td>:first</td><td>匹配找到的第一个元素</td></tr>
+    <tr><td>:last</td><td>匹配到的最后一个元素</td></tr>
+    <tr><td>：even</td><td>匹配到的索引值为偶数的元素</td></tr>
+    <tr><td>：odd</td><td>匹配所有索引值为偶数的元素</td></tr>
+    <tr><td>：eq</td><td>匹配一个给定索引值的函数</td></tr>
+    <tr><td>:gt</td><td>匹配所有大于给定索引值的元素</td></tr>
+    <tr><td>：lt</td><td>匹配所有小于给定索引值的元素</td></tr>
+</table>
+</body>
+</html>
