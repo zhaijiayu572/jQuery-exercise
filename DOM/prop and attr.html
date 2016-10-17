@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prop and attr</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $("input").change(function () {
+                var $input=$(this);
+                $("p").html(".attr('checkde')="+$input.attr('checked')+"<br/>"+   //attr方法得到的字符串
+                ".prop('checked')="+$input.prop("checked")+"<br/>"+             //prop得到的是bool值
+                ".is('checked')="+$input.is(':checked'));                       //is得到的是bool值
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="checkbox" checked="checked">
+<label for="check">复选框</label>
+<p></p>
+</body>
+</html>

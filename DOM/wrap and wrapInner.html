@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wrap and wrapInner</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+           $("a").wrap("<li></li>") ;      //为指定元素外包元素
+
+            $("body").wrapInner("<ul></ul>");   //为指定元素里面的元素外包元素
+            $("button").click(function () {
+                $("a").unwrap();            //删除父级元素
+            });
+        });
+    </script>
+    <style>
+        a{
+            background-color: #fcf;
+        }
+        li{
+            border: solid 1px blue;
+            padding: 2px;
+        }
+        ul{
+            border: solid 1px red;
+        }
+    </style>
+</head>
+<body>
+<a href="">首页</a>
+<a href="">社区</a>
+<a href="">新闻</a>
+<button>卸包</button>
+</body>
+</html>

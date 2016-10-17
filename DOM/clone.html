@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clone and replace</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $("b").click(function () {
+                $(this).toggleClass("off");
+            }).clone(true).insertAfter("p");   //true用来控制是否保留添加的事件
+            $("button").click(function () {
+               $(this).replaceWith("<div>"+$(this).text()+"</div>");
+            });
+        });
+    </script>
+    <style>
+        .off{
+            background-color: yellow;
+        }
+        button{
+            display: block;
+            margin: 3px;
+            color: red;
+            width: 200px;
+        }
+        div{
+            color: red;
+            border: 2px solid blue;
+            width: 200px;
+            margin: 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<b>加粗文本</b>
+<p>段落文本</p>
+<button>按钮一</button>
+<button>按钮二</button>
+<button>按钮三</button>
+</body>
+</html>
