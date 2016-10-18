@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>setsize</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $("div").html("height(原)="+$("div").height()+"<br/>width(原)="+$("div").width());
+            $("button").click(function () {
+                $("div").height(140);
+                $("div").width("30em");
+                $("div").html("height(现)="+$("div").height()+"<br/>width(现)="+$("div").width());
+            });
+        });
+    </script>
+</head>
+<body>
+<div style="border: solid 10px red">盒子</div>
+<button>点击我试试</button>
+</body>
+</html>
