@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hover</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $("p").hover(function () {
+                $(this).text("我放上来了");
+            },function () {
+                $(this).text("我移出去了");
+            })
+        });
+    </script>
+</head>
+<body>
+<p>鼠标放上去试试</p>
+</body>
+</html>

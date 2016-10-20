@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>namespace</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $("div").bind("click.a",function () {
+                $("div").append("<p>click.a事件</p>")
+            }).bind("click.b",function () {
+                $("div").append("<p>click.b事件</p>")
+            });
+            $("button").click(function () {
+                $("div").unbind(".a");
+            })
+
+        });
+    </script>
+</head>
+<body>
+<div>jQuery命名空间</div>
+<button>删除事件</button>
+</body>
+</html>
