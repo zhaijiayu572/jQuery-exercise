@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用animate实现div的平移</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+             $("div").animate({    //第一个动画
+                 left:'10px'
+             },1000).animate({
+                 top:'300px'      //第二个动画
+             },1000)
+        });
+    </script>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: #ffccff;
+            position: absolute;            /*只用使用absolute fixed relative才能使其移动*/
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

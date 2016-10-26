@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置动画的频率</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            jQuery.fx.interval = 100;      //值越大，动画越精细
+            $("div").click(function () {
+                $(this).toggle(3000);
+            });
+        });
+    </script>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: #ffccff;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

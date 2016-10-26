@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>show and hide</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+           for(var i=0;i<5;i++)
+           {
+               $("<div>").appendTo(document.body);
+           }
+           $("div").click(function () {
+               $(this).hide(2000,function () {     // 用两秒来隐藏
+                   $(this).remove();    //从文档中删除节点
+               });
+           });
+        });
+    </script>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: #cccccc;
+            float: left;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>

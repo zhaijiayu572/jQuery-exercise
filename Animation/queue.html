@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画队列</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+    <style>
+        .bg{
+            background-color: #00f;
+        }
+        div{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            left: 0;
+            top:50px;
+            display: none;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("input").click(function () {
+                $("div").slideDown("slow")
+                        .animate({left:'+=100'},2000)
+                        .queue(function () {    //在队列的末尾添加一个函数
+                            $(this).addClass("bg");       //调用回调后动画将停止
+                        })
+                        .animate({left:'-=100'},2000)
+                        .queue(function () {
+                            $(this).removeClass('bg');
+                        })
+                        .slideUp("slow");
+                alert($("div").queue);   //显示动画队列
+            })
+        })
+    </script>
+</head>
+<body>
+<input type="button" value="动画演示">
+<div></div>
+</body>
+</html>

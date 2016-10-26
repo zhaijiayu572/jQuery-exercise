@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery-css</title>
+    <script src="../jQuery/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<p>jQuery</p>
+<script>
+    $(function () {
+        $("p").hover(function () {
+            $(this).css({
+                'backgroundColor':'yellow',
+                'color':'red'
+            });
+        },
+        function () {
+            $(this).css({
+                'background-color':'white',
+                'color':'#000000'
+            });
+        })
+    });
+</script>
+</body>
+</html>
