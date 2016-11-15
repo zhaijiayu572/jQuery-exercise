@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form-focus</title>
+</head>
+<style>
+    body{
+        font: normal 12px/17px Arial;
+    }
+    div{
+        padding: 2px;
+    }
+    input,textarea{
+        width: 12em;
+        border: 1px solid #888;
+    }
+    .focus{
+        background-color: red;
+    }
+</style>
+<body>
+<form action="">
+    <fieldset>
+        <legend>个人基本信息</legend>
+        <div>
+            <label for="username">用户姓名</label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="password">密码</label>
+            <input type="text" id="password">
+        </div>
+        <div>
+            <label for="message">详细信息</label>
+            <textarea name="" id="message" cols="30" rows="5"></textarea>
+        </div>
+        </fieldset>
+</form>
+<script src="../../jQuery/jquery-3.1.1.min.js"></script>
+<script src="demo.js"></script>
+</body>
+</html>
