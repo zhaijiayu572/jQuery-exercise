@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text-height1_2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        form{
+            font: normal 12px/17px Arial;
+        }
+        #msg-caption{
+            width: 100%;
+
+        }
+        #msg-caption span{
+            height: 20px;
+            width: 50px;
+            text-align: center;
+            line-height: 20px;
+            background-color: #ffccff;
+            cursor: pointer;
+            float: left;
+            margin-right: 5px;
+        }
+        textarea{
+            height: 80px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<form action="">
+    <div id="msg">
+        <div id="msg-caption">
+            <span id="bigger">bigger</span>
+            <span id="smaller">smaller</span>
+        </div>
+        <div>
+            <textarea name="" id="comment" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+</form>
+<script src="../../jQuery/jquery-3.1.1.min.js"></script>
+<script src="demo1_2.js"></script>
+</body>
+</html>
