@@ -1,0 +1,31 @@
+body{
+    font: 12px/17px Arial;
+    color: #666;
+}
+.int{
+    margin-bottom: 5px;
+}
+.int label{
+    float: left;
+    width: 100px;
+    text-align: right;
+}
+.sub{
+    padding-left: 100px;
+}
+.sub input{
+    margin-right: 10px;
+}
+.formtips{
+    width: 200px;
+    margin:4px;
+    padding:4px;
+}
+.onError{
+    background: #FFE0E9 url("../img/reg3.gif") no-repeat;
+    padding-left: 25px;
+}
+.onSucess{
+    background: #E9FBEB url("../img/reg4.gif") no-repeat;
+    padding-left: 25px;
+}
