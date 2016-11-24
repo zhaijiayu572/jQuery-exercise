@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格的折叠</title>
+    <link rel="stylesheet" href="table-fold.css">
+    <script src="../../jQuery/jquery.min.js"></script>
+    <script src="demo.js"></script>
+</head>
+<body>
+<table>
+    <thead><tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>居住地</th>
+    </tr></thead>
+    <tbody>
+    <tr class="parent" id="row_01">
+        <td colspan="3">前台设计组</td>
+    </tr>
+    <tr class="child_row_01">
+        <td>张三</td>
+        <td>男</td>
+        <td>浙江</td>
+    </tr>
+    <tr class="child_row_01">
+        <td>李四</td>
+        <td>女</td>
+        <td>浙江</td>
+    </tr>
+
+    <tr class="parent" id="row_02">
+        <td colspan="3">前台开发组</td>
+    </tr>
+    <tr class="child_row_02">
+        <td>王五</td>
+        <td>男</td>
+        <td>浙江</td>
+    </tr>
+    <tr class="child_row_02">
+        <td>赵六</td>
+        <td>女</td>
+        <td>浙江</td>
+    </tr>
+
+    <tr class="parent" id="row_03">
+        <td colspan="3">后台开发组</td>
+    </tr>
+    <tr class="child_row_03">
+        <td>Rain</td>
+        <td>男</td>
+        <td>Canada</td>
+    </tr>
+    <tr class="child_row_03">
+        <td>Snow</td>
+        <td>女</td>
+        <td>Canada</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
