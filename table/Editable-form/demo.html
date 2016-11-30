@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Editable form</title>
+    <style>
+        body{
+            font: normal 12px/17px Arial;
+        }
+        table{
+            border: 1px solid;
+            border-collapse: collapse;
+            width: 400px;
+        }
+        table td,th{
+            width: 50%;
+            border: 1px solid;
+            height: 30px;
+        }
+        tbody th{
+            background: #aaaaaa;
+        }
+    </style>
+    <script src="../../jQuery/jquery.min.js"></script>
+    <script src="demo.js"></script>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">点击表格就可以编辑</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>学号</th>
+            <th>姓名</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="editable">张三</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="editable">李四</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="editable">王五</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
